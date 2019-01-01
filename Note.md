@@ -1,5 +1,10 @@
 ## Big Data
-1. [Hive] ()
+1. SQL 
+  * [Hive](https://github.com/zewang/StudyNote/blob/master/Hive.md)
+  * Apache Phoenix on HBase
+  * SparkSQL
+  * Presto
+  * IBM BigSQL
 2. HBase http://www.uml.org.cn/bigdata/201804131.asp
 3. NiFi https://dzone.com/articles/apache-spark-and-apache-nifi-integration-part-2-of
 4. 
