@@ -1,7 +1,8 @@
-## Big Data HDP
-1. HBase http://www.uml.org.cn/bigdata/201804131.asp
-2. NiFi https://dzone.com/articles/apache-spark-and-apache-nifi-integration-part-2-of
-3. 
+## Big Data
+1. [Hive] ()
+2. HBase http://www.uml.org.cn/bigdata/201804131.asp
+3. NiFi https://dzone.com/articles/apache-spark-and-apache-nifi-integration-part-2-of
+4. 
 
 ## Machine Learning
 1. BigDL https://github.com/intel-analytics/BigDL
