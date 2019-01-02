@@ -42,7 +42,7 @@
 3. 
 
 ## Books
-1. High Performance Spark
+1. High Performance Spark [Note](https://github.com/zewang/StudyNote/blob/master/Spark.md)
 2. Design Data-Intensive Applications
 3. Streaming Systems
 
