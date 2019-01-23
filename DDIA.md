@@ -57,7 +57,29 @@
     * Use Case: multi-datacenter operation, clients with offline operation, collaborative editing
     * Handling Write Conflicts: avoid by routing to same datacenter
     * Replication Topology: all-to-all
-  * Leaderless replication
+  * Leaderless replication: Amazon Dynamo
+    * Quorum for read and write
 
 6. CH6 Patitioning
 7. CH7 Transactions
+8. CH8 The Trouble with Distributed SYstems
+9. CH9 Consistency and Consensus
+
+10. CH10 Batch Processing
+  * Unix tools: awk, sed, grep, sort, uniq, xargs
+  * MapReduce and distributed filesystems
+    * Reduce-Side join
+    * Map-Side join
+      * broadcast hash join
+      * partitioned hash join
+      * map-side merge join
+    * Batch Process Output
+      * Build search index
+      * Key-value stores
+    * Map reduce vs MPP: handling of faults and use of memory/disk 
+  * Beyond MapReduce
+    * Map reduce materilize intermediate state, other engines:Spark, Tez and Flink
+    * Pregel processing model to process graph data
+
+11. CH11 Stream Processing
+12. CH12 The Future of Data Systems 

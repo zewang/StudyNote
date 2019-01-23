@@ -8,3 +8,6 @@
 7. Record insertion should use sort by
 8. For non-ACID tables, concatenate small files for Hive tables
 9. Analyze table to update statistics
+
+## Hive Transactions
+* https://cwiki.apache.org/confluence/display/Hive/Hive+Transactions
