@@ -61,7 +61,32 @@
     * Quorum for read and write
 
 6. CH6 Patitioning
+  * Partition by Key Range
+  * Partition by Hash of Key
+  * Secondary index
+    * local index: document-partitioned index, each partition maintains its own secondary indexes
+    * global index: term-partitioned index, can be partitioned differently from the primary key index
+  * Rebalancing Partitions
+  * Routing requests
+    * which component makes the routing decision
+      * each node
+      * routing tier: zookeeper maintains the authoritative mapping of partitions to nodes
+      * client
+  
 7. CH7 Transactions
+  * ACID: Atomocity, Consistency, Isolation and Durability
+    * A and C describes what the database should do if a client makes several writes within the same transaction
+    * Isolation
+      * READ COMMITTED isolation guarantees no dirty reads and no dirty writes, lock to prevent dirty writes, remembers both old committed value and new value by write lock
+      * SNAPSHOT isolation to address read skew: MVCC, multi-version concurrency control
+      * lost updates
+      * write skew, phantom addressed by materializing conflicts
+    * Serialization isolation
+      * Actual Serial Execution
+      * Two-phase locaking
+      * Serializable Snapshot Isolation 
+  * BASE: Basically Available, Soft state and Eventual consistency
+
 8. CH8 The Trouble with Distributed SYstems
 9. CH9 Consistency and Consensus
 
@@ -82,4 +107,17 @@
     * Pregel processing model to process graph data
 
 11. CH11 Stream Processing
+  * Messaging Systems: publish/subscribe model
+    * direct messaging from producers to consumers
+    * Message brokers
+      * AMQP/JMS-style message broker
+      * log-based message brokers: Kafka, Kinesis etc., taking ideas from db
+    * Change Data Capture: mutable
+    * Event Sourcing: record immutable events
+  * Processing Streams
+    * Event time vs Processing Time
+    * Stream-stream join, stream-table join, table-table join
+    * fault-tolerance: exactly-once semantics
+      * Microbatching: Spark Streaming; checkpointing: Apache Flink
+
 12. CH12 The Future of Data Systems 
