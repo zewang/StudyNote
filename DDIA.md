@@ -60,7 +60,7 @@
   * Leaderless replication: Amazon Dynamo
     * Quorum for read and write
 
-6. CH6 Patitioning
+6. CH6 Partitioning
   * Partition by Key Range
   * Partition by Hash of Key
   * Secondary index
@@ -87,7 +87,16 @@
       * Serializable Snapshot Isolation 
   * BASE: Basically Available, Soft state and Eventual consistency
 
-8. CH8 The Trouble with Distributed SYstems
+8. CH8 The Trouble with Distributed Systems
+  Partial failures can occur 
+  * Unreliable Networks
+  * Unreliable Clock
+  * Process Pause
+  * Syetem model
+    * timing assumptions: sychronous model, partially synchronous model, asynchronous model
+    * node failures: crash-stop faults, crash-recovery faults, byzantine(arbitrary) faults 
+  First detect the faults(timeouts), tolerate (get quorum to agree on)
+
 9. CH9 Consistency and Consensus
 
 10. CH10 Batch Processing
@@ -121,3 +130,8 @@
       * Microbatching: Spark Streaming; checkpointing: Apache Flink
 
 12. CH12 The Future of Data Systems 
+  * Data Integration
+    * Unifying batch and stream processing
+  * Unbundling Databases
+  * Ensure processing is correct
+  * Predictive analytics bias and privacy
