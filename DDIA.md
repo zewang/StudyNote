@@ -98,6 +98,18 @@
   First detect the faults(timeouts), tolerate (get quorum to agree on)
 
 9. CH9 Consistency and Consensus
+  * Linearizability: make a system appeart as if there were only one copy of data and all operations are atomic
+    * Linearizability vs Serializability
+    * CAP theorem
+  * Ordering Guarantees
+    * Linearizability: total order of operations
+    * Causality defines partial order
+    * Linearizability is stronger than causal consistency
+    * Total order broadcast
+  * Distributed Transactions and Consensus
+    * Atomic commit
+    * two-phase commit: use coordinator
+    * fault-tolerant consensus algorithms: VSR, Paxos, Raft and Zab, total order algorithms
 
 10. CH10 Batch Processing
   * Unix tools: awk, sed, grep, sort, uniq, xargs
